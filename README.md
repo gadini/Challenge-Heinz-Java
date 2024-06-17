@@ -4,12 +4,19 @@ Aplicação ESG para treinamento pessoal
 
 ## Setup e Uso
 
-### Execução / Local dev
+### Execução / Local H2 Database dev
 
 #### Terminal
 
 ```sh
 ./mvnw spring-boot:run -Dspring-boot.run.profiles=dev
+```
+### Execução / Oracle Database prd
+
+#### Terminal
+
+```sh
+./mvnw spring-boot:run -Dspring-boot.run.profiles=prd
 ```
 
 ## Arquitetura
@@ -18,15 +25,5 @@ Aplicação ESG para treinamento pessoal
 
 ![](assets/docs/src/mer/mer.svg)
 
-## Java
 
-> [Spring Initializr](https://start.spring.io/) - Criar aplicação conforme a configuração 
 
-### Spring Boot - Configuração
-
-![](assets/images/spring.png)
-
-## Referencias
-
- - https://spring.io/projects/spring-framework
- - https://plantuml.com/
