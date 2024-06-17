@@ -1,0 +1,103 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+p{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --color-sharp: #FF1132;
+    --color-blue: #003049;
+    --color-alert: #FCBF49;
+    --color-cool: #C5F4E0;
+    --color-gray: #9999A1;
+}
+
+.container-Principal{
+    height: 1000px;
+}
+
+input{
+    height: 1.6rem;
+}
+.bg-img{
+    width: 82rem;
+
+}
+
+.input-btn-border-color{
+    border-color: #9999A1;
+}
+.strip{
+    background-color: var(--color-sharp);
+    width: 27rem;
+    height: 5rem;
+    color: var(--color-sharp);
+}
+
+.form-input{
+    box-shadow: 8px 6px 5px var(--color-gray);
+}
+
+.btn{
+    margin-top: 5px;
+    padding: 8px 2rem;
+    background-color: var(--color-sharp);
+    border-radius: 0.2rem;
+    transition: .5s;
+    color: white;
+}
+
+
+.btn:hover {
+    background-color: transparent;
+    color: black;
+    border: 1px solid black;
+}
+
+.suport{
+    margin-left: 6rem;
+    color: var(--color-sharp);
+    text-decoration: none;
+    font-weight: bold;
+}
+.suport:hover{
+    transition: .5s;
+    color: white;
+    background-color: var(--color-sharp);
+    border-radius: 5rem;
+
+}
+
+.bg-meta{
+    background-color: var(--color-alert);
+}
+
+.nav-item{
+    text-decoration: none;
+    color: black;
+    margin-left: 2rem;
+    font-size: 1.2rem;
+}
+
+.nav-item:hover{
+    color: var(--color-sharp);
+}
+
+.perfil{
+    border: 1px solid var(--color-alert);
+    background-color: var(--color-alert);
+    font-size: 1.3rem;
+    color: black;
+}
+
+.footer {
+	 background-color: black;
+	 color: white;	
+	 position: fixed;	
+	 width: 100%;
+	 bottom: 0;  
+	 padding: 10px 0;
+}
