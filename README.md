@@ -21,9 +21,18 @@ Aplicação ESG para treinamento pessoal
 
 ## Arquitetura
 
-### MER
+### Modelo Relacional
 
-![](assets/docs/src/mer/mer.svg)
+![modelorel](https://github.com/gadini/Challenge-Heinz/assets/161088869/23706ff9-c5f9-45c5-89eb-8f200ce51a8c)
+
+### Modelo Lógico
+
+![modeloLog](https://github.com/gadini/Challenge-Heinz/assets/161088869/5e5fa7ec-3417-4ad9-9065-8768678125ed)
+
+
+
+
+
 
 
 
