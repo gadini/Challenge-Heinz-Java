@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sharp Reports</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="icon" href="logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+</head>
+<body>
+	<div th:replace="layout/header :: headerFragment"></div>
+	
+	<div id="content">
+		<div class="container">
+			<section>
+            <div class="border border-dark rounded-1 p-5">
+
+                <h2 class="text-blue mb-4" id="Cadastro">Cadastrar Funcionario</h2>
+
+                <form th:action="@{/funcionarios/save}" th:object="${funcionario}" method="post">
+                    <div class="row">
+                        
+                        <div class="col-md-4 my-2">
+                            <label for="nomeFuncionario" class="form-label">Nome</label>
+                            <input type="text" class="form-control" id="nome" th:field="*{nome}" placeholder="Insira o nome do funcionario">
+                        </div>
+
+                        
+                        <div class="col-md-4 my-2">
+                            <label for="sobrenomeFuncionario" class="form-label">Sobrenome</label>
+                            <input type="text" class="form-control" id="sobrenome" th:field="*{sobrenome}" placeholder="Moreira">
+                        </div>
+
+                        
+                        <div class="col-md-4 my-2">
+                            <label for="emailFuncionario" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" th:field="*{email}" placeholder="claudiomoreira@email.com">
+                        </div>
+                        
+                        <div class="col-md-4 my-2">
+                            <label for="cpfFuncionario" class="form-label">CPF</label>
+                            <input type="number" class="form-control" id="cpf" th:field="*{cpf}" placeholder="xxx.xxx.xxx-xx">
+                        </div>
+                        
+                        <div class="col-md-4 my-2">
+                            <label for="telFuncionario" class="form-label">Telefone</label>
+                            <input type="text" class="form-control" id="telefone" th:field="*{telefone}" placeholder="(xx) xxxxx-xxxx">
+                        </div>
+                        
+                        <div class="col-md-4 my-2">
+                            <label for="corFuncionario" class="form-label">Cor</label>
+                            <select class="form-select" aria-label="Default select example" id="cor" th:field="*{cor}">
+                                <option th:value="Branco">Branco</option>
+                                <option th:value="Preto">Preto</option>
+                                <option th:value="Amarelo">Amarelo</option>
+                                <option th:value="Pardo">Pardo</option>
+                            </select>
+                        </div>
+
+                        <div class="col-md-4 my-2">
+                            <label for="generoFuncionario" class="form-label">Genero</label>
+                            <select class="form-select" aria-label="Default select example" id="genero" th:field="*{genero}">
+                                <option th:value="NaoInformado" selected>Prefiro não informar</option>
+                                <option th:value="Masculino">Masculino</option>
+                                <option th:value="Feminino">Feminino</option>
+                                <option th:value="Outro">Outro</option>
+                            </select>
+                        </div>
+                        
+                        <div class="col-md-4 my-2">
+                            <label for="corFuncionario" class="form-label">Estado Civil</label>
+                            <select class="form-select" aria-label="Default select example" id="estadoCivil" th:field="*{estadoCivil}">
+                                <option th:value="Solteiro">Solteiro</option>
+                                <option th:value="Casado">Casado</option>
+                                <option th:value="Divorciado">Divorciado</option>
+                                <option th:value="Viuvo">Viúvo</option>
+                            </select>
+                        </div>
+
+
+                    </div>
+
+                    <div class="my-3 d-flex justify-content-center">
+                        <button type="submit" class="btn btn-primary btn-lg mx-2">Cadastrar</button>
+                         <a th:href="@{/funcionarios}" class="btn btn-warning btn-lg">Cancelar</a>
+                    </div>
+                </form>
+            </div>
+
+        </section>			
+		</div>
+	</div>	
+	
+	<div th:replace="layout/footer :: footerFragment"></div>
+		
+</body>
+</html>

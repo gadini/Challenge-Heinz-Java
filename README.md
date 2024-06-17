@@ -1,40 +1,38 @@
-# MVC RH
+# SISTEMA ESG
 
-Aplicação MVC de Recursos Humanos para fins didáticos
+Aplicação ESG para treinamento pessoal
 
 ## Setup e Uso
 
-### Execução / Local dev
+### Execução / Local H2 Database dev
 
 #### Terminal
 
 ```sh
 ./mvnw spring-boot:run -Dspring-boot.run.profiles=dev
 ```
+### Execução / Oracle Database prd
 
-#### [H2 Web UI](http://localhost:8080/h2-console)
+#### Terminal
 
-> - *url*: jdbc:h2:mem:testdb
-> - *usuário*: sa
-> - *senha*: password
-
-![](assets/images/h2-console.png)
+```sh
+./mvnw spring-boot:run -Dspring-boot.run.profiles=prd
+```
 
 ## Arquitetura
 
-### MER
+### Modelo Relacional
 
-![](assets/docs/src/mer/mer.svg)
+![modelorel](https://github.com/gadini/Challenge-Heinz/assets/161088869/23706ff9-c5f9-45c5-89eb-8f200ce51a8c)
 
-## Java
+### Modelo Lógico
 
-> [Spring Initializr](https://start.spring.io/) - Criar aplicação conforme a configuração 
+![modeloLog](https://github.com/gadini/Challenge-Heinz/assets/161088869/5e5fa7ec-3417-4ad9-9065-8768678125ed)
 
-### Spring Boot - Configuração
 
-![](assets/images/spring.png)
 
-## Referencias
 
- - https://spring.io/projects/spring-framework
- - https://plantuml.com/
+
+
+
+
