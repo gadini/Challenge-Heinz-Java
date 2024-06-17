@@ -1,6 +1,6 @@
-# MVC RH
+# SISTEMA ESG
 
-Aplicação MVC de Recursos Humanos para fins didáticos
+Aplicação ESG para treinamento pessoal
 
 ## Setup e Uso
 
